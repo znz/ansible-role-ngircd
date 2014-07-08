@@ -15,10 +15,10 @@ ngircd_server_uid: "irc"
 # [Limits]
 ngircd_max_nick_length: no
 # [SSL]
-ngircd_ssl_cert_file: no
-ngircd_ssl_dh_file: no
-ngircd_ssl_key_file: no
+#ngircd_ssl_cert_file: no
+#ngircd_ssl_dh_file: no
+#ngircd_ssl_key_file: no
 ngircd_ssl_ports: no
 # role only
-ngircd_ssl_csr_file: no
+#ngircd_ssl_csr_file: no
 ngircd_ssl_csr_subj: "/CN={{ ngircd_hostname }}"
