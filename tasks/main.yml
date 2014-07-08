@@ -1,0 +1,4 @@
+---
+# tasks file for znzj.ngircd
+- include: packages.yml tags=ngircd-packages
+- include: config.yml tags=ngircd-config
