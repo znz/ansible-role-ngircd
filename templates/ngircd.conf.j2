@@ -261,7 +261,7 @@
 
 	# SSL Server Key Certificate
 	;CertFile = /etc/ssl/certs/server.crt
-{% if ngircd_ssl_cert_file %}
+{% if ngircd_ssl_cert_file is defined %}
 	CertFile = {{ ngircd_ssl_cert_file }}
 {% endif %}
 
@@ -276,13 +276,13 @@
 
 	# Diffie-Hellman parameters
 	;DHFile = /etc/ngircd/dhparams.pem
-{% if ngircd_ssl_dh_file %}
+{% if ngircd_ssl_dh_file is defined %}
 	DHFile = {{ ngircd_ssl_dh_file }}
 {% endif %}
 
 	# SSL Server Key
 	;KeyFile = /etc/ssl/private/server.key
-{% if ngircd_ssl_key_file %}
+{% if ngircd_ssl_key_file is defined %}
 	KeyFile = {{ ngircd_ssl_key_file }}
 {% endif %}
 

@@ -38,7 +38,6 @@
     umask 022
     openssl req -new -key {{ ngircd_ssl_key_file }} -out {{ ngircd_ssl_csr_file }} -batch -subj "{{ ngircd_ssl_csr_subj }}"
   when: ngircd_ssl_csr_file is defined
-  notify: restart ngircd
 
 - name: creates {{ ngircd_ssl_cert_file }} (self signed)
   shell: |
